@@ -27,10 +27,6 @@ function App(props) {
     setTasks(updatedTasks);
   }
 
-  function addTask(name) {
-    const newTask = { id: "id", name: name, completed: false };
-    setTasks([...tasks, newTask]);
-  }
 
   function deleteTask(id) {
     const remainingTasks = tasks.filter(task => id !== task.id);
@@ -69,12 +65,16 @@ function App(props) {
     />
   ));
 
+  function addTask(name) {
+    const newTask = { id: "id", name: name, completed: false };
+    setTasks([...tasks, newTask]);
+  }
   const tasksNoun = taskList.length !== 1 ? 'tasks' : 'task';
   const headingText = `${taskList.length} ${tasksNoun} remaining`;
 
   return (
     <div className="todoapp stack-large">
-    <Form />
+    <Form addTask={addTask} />
     <div className="filters btn-group stack-exception">
       {filterList}
     </div>

@@ -12,6 +12,7 @@ function Form(props) {
     props.addTask(name);
     setName("");
   }
+
   return (
     <form onSubmit={handleSubmit}>
       <h2 className="label-wrapper">

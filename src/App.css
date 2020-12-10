@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 *:focus {
-  outline: 3px dashed #228bec;
+  outline: 3px dashed #99c5ee;
   outline-offset: 0;
 }
 html {
@@ -19,9 +19,42 @@ h1 {
   text-align: center;
 }
 
-ul {
+.stack-large {
   list-style: none;
   padding: 0;
+  background: #e8e8e8;
+  border-radius: 4px;
+  padding: 5px;
+}
+.filters{
+  padding: 0;
+  background: #e8e8e8;
+  border-radius: 4px;
+  padding: 5px;
+}
+.todoapp .stack-large {
+  list-style: none;
+  padding: 0;
+  background: #e8e8e8;
+  border-radius: 4px;
+  padding: 5px;
+}
+.stack-small{
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  padding: 3px 10px;
+  align-items: center;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  padding: 3px 10px;
 }
 button {
   border: none;
@@ -29,7 +62,7 @@ button {
   padding: 0;
   width: auto;
   overflow: visible;
-  /*background: transparent; */
+  background: transparent; 
   color: inherit;
   font: inherit;
   line-height: normal;
@@ -40,29 +73,18 @@ button {
 button::-moz-focus-inner {
   border: 0;
 }
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-}
+
 button,
 input {
   overflow: visible;
 }
-input[type="text"] {
-  border-radius: 0;
-}
+
 body {
   width: 100%;
   max-width: 68rem;
   margin: 0 auto;
   font: 1.6rem/1.25 Arial, sans-serif;
-  background-color: #f5f5f5;
+  background: #e3eef5;
   color: black;
 }
 @media screen and (min-width: 620px) {
@@ -77,15 +99,18 @@ body {
   display: inline-block;
   margin-top: 0.4rem;
 }
+/*Button Styling*/ 
 .btn {
   padding: 0.8rem 1rem 0.7rem;
   border: 0.2rem solid #4d4d4d;
   cursor: pointer;
   text-transform: capitalize;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 .btn.toggle-btn {
   border-width: 1px;
   border-color: #d3d3d3;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 .btn.toggle-btn[aria-pressed="true"] {
   text-decoration: underline;
@@ -102,6 +127,7 @@ body {
 .btn__primary {
   color: #fff;
   background-color: #000;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 .btn-group {
   display: flex;
@@ -131,6 +157,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
+/*List Stlying*/
 .stack-small > * + * {
   margin-top: 1.25rem;
 }
@@ -148,9 +175,9 @@ body {
 .stack-exception {
   margin-top: 1.2rem;
 }
-/* END GLOBAL STYLES */
+/* END GLOBAL STYLES-App styling */
 .todoapp {
-  background: #feff9c;
+  background: #fbfcb5;
   margin: 2rem 0 4rem 0;
   padding: 1rem;
   position: relative;
@@ -186,7 +213,8 @@ body {
 .input__lg {
   padding: 2rem;
   border: 2px solid #000;
-  background-color: #feff9c;
+  background-color: #fcfaf3;
+  opacity: 10rem;
 }
 .input__lg:focus {
   border-color: #4d4d4d;
@@ -237,7 +265,7 @@ body {
   line-height: 1.25;
   display: block;
   position: relative;
-  min-height: 44px;
+  min-height: 40px;
   padding-left: 40px;
   clear: left;
 }
@@ -247,7 +275,7 @@ body {
   top: -2px;
   left: -2px;
   width: 44px;
-  height: 44px;
+  height: 40px;
 }
 .c-cb > input[type="checkbox"] {
   -webkit-font-smoothing: antialiased;

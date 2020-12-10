@@ -1,3 +1,21 @@
+#   Lauren Libretti 
+
+##  Overview
+This project is a functional todo list capable of adding, editing, deleting tasks, and sorting tasks. 
+Built using React, html, & css.  
+
+### Ideas for Improvement 
+change button styling for more contrast. 
+add a footer
+change sorting buttons to render into columns by status
+
+
+##  User Stories
+As a user I can {keep a running list of tasks I need to complete}, so that I can {be more organized}.
+As a user I can {edit & delete tasks, as my list changes}, so that I can {stay current on my todo list}.
+As a user I can { sort tasks}, so that {I can track my progress}.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
